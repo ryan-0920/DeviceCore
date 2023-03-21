@@ -10,6 +10,10 @@ type StructLayout struct {
 	DeliveryTime int64  `json:"delivery_time"` // 接收上一个设备传递所需时间
 }
 
+func InitLayout() (layout []StructLayout) {
+	return layout
+}
+
 // 保存设备布局
 func (layout *StructLayout) Save() (err error) {
 	return err
